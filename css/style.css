@@ -1,0 +1,226 @@
+@import 'utilities.css';
+:root{
+    --black:#000000;
+    --white:hsl(0, 0%, 100%);
+    --pink:	#ffc0cb;
+    --purple: #D8BFD8;
+    --blue: #AEC6CF;
+}
+body{
+    height: 4000px;
+    font-family: 'lato',sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   -webkit-font-smotthing:atialiased;
+}
+header{
+    background: var(--black);
+}
+header nav .left a{
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 2rem;
+    transition: all .3s ease;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+header nav .left a:hover{
+    color: var(--pink);
+}
+header nav .left img{
+    padding-right: 1rem;
+    width: 150px;
+    animation: rotate 2s linear infinite;
+}
+header .home img{
+    width: 300px;
+    padding: 2rem;
+    padding-bottom: 6rem;
+}
+header .home h1{
+    font-family: 'Inspiration', cursive;
+    color: var(--pink);
+    font-size: 5rem;
+}
+header .home h5{
+    color: var(--white);
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 100;
+    font-family: 'Dancing Script', cursive;
+}
+header .home p{
+    color: var(--white);
+    
+    padding-top: 1rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+}
+header .home .moon{
+    padding-right: 3rem;
+    animation: rotate 2s linear infinite;
+}
+section.about{
+    background: var(--pink);
+}
+section.about .about-img{
+    width: 10px;
+    align-items: center;
+    padding-left: 25rem;
+    padding-bottom: -2rem;
+}
+section.about .about-h{
+    text-align: center;
+    font-family: 'Inspiration', cursive;
+    padding: 2rem;
+    padding-bottom: 1rem;
+    font-size: 10rem;
+    color: var(--black);
+    animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+    0% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(5deg);
+    }
+    80% {
+        transform: rotate(5deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0deg);
+    }
+
+}
+section.about .about-h:hover{
+    color: var(--white);
+}
+section.about .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5rem;
+    padding: 6rem;
+}
+section.about .card-wrapper .card{
+    background: var(--black);
+    padding: 3rem 2rem;
+    text-align: center;
+    transition: all .3s ease;
+    color: var(--white);
+}
+section.about .card-wrapper .card:hover{
+    background: var(--white);
+    color: var(--black);
+    transition-duration: 1s;
+}
+section.about .card-wrapper .card img{
+    width: 500px;
+}
+section.about .card-wrapper .card h1{
+    font-family: 'Inspiration', cursive;
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    animation: move 3s linear infinite;
+
+}
+section.about .card-wrapper .card h1:hover{
+    color: var(--pink);
+    transition-duration: 1s;
+}
+section.about .card-wrapper .card p{
+    font-family: 'Dancing Script', cursive;
+    padding: 2rem;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    font-weight: 500;
+}
+section.about .card-wrapper .card a img{
+    width: 60px;
+}
+section.date{
+    background: url(../images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+section.date .animation{
+    animation-name: move;
+    animation-duration: 3s;
+    animation: move 3s linear infinite;
+}
+@keyframes move {
+    0% {
+        opacity: 1;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+section.date h1{
+    font-family: 'Dancing Script', cursive;
+    padding: 2rem;
+    padding-bottom: 0;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--white);
+}
+section.date p{
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+    color: var(--white);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+section.moments{
+    background: var(--pink);
+}
+section.moments .memories h1{
+    text-align: center;
+    font-family: 'Inspiration', cursive;
+    padding: 2rem;
+    padding-bottom: 1rem;
+    font-size: 10rem;
+    color: var(--black);
+    animation: rotate 2s linear infinite;
+}
+section.moments .memories h1:hover{
+    color: var(--white);
+}
+section.moments .memories p{
+    color: var(--black);
+    padding-bottom: 2rem;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+section.moments .memories img{
+    padding-left: 43rem;
+    padding-bottom: 5rem;
+}
+section.moments .images{
+    padding:3rem;
+}
+section.moments .images img{
+    padding: 1.5rem;
+}
+section.moments .images video{
+    padding: 1.5rem;
+}
